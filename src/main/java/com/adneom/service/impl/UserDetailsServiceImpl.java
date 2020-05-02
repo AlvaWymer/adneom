@@ -1,4 +1,4 @@
-package com.adneom.service;
+package com.adneom.service.impl;
 
 import com.adneom.bean.Client;
 import com.adneom.bean.User;

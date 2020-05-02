@@ -1,4 +1,4 @@
-package com.adneom.service;
+package com.adneom.service.impl;
 
 import org.springframework.security.core.GrantedAuthority;
 

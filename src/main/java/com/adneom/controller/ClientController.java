@@ -25,11 +25,11 @@ public class ClientController {
     @Autowired
     private UserRepository userRepository;
 
-    @ApiOperation(value = "Client-Register/用户-注册用户", notes = "Client register")
+    @ApiOperation(value = "Client-Register", notes = "Client register")
     @PostMapping("/register")
     public Client register(@RequestBody Client client) {
-        Optional<Client> bizUser = userRepository.findByUsername(client.getUsername());
-        if (bizUser.isPresent()) {
+        Optional<Client> exsitClient = userRepository.findByUsername(client.getUsername());
+        if (exsitClient.isPresent()) {
             throw new BusinessException(ErrorCode.CLIENT_USERNAME_ALERDY_EXIST);
         }
         client.setPassword(DigestUtils.md5DigestAsHex((client.getPassword()).getBytes()));
@@ -37,13 +37,10 @@ public class ClientController {
         return userRepository.save(client);
     }
 
-    @GetMapping(value = {"/{id}"})
-    public void notifyDeparture(@PathVariable("id") String id) {
-        System.err.println(id);
-    }
-
+    @ApiOperation(value = "Client-Get Info", notes = "Get client info")
     @GetMapping(value = {"{id}/info"})
     public void getInfo(@PathVariable("id") String id) {
+        // TODO naihua
         System.err.println(id);
     }
 

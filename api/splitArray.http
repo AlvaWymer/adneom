@@ -1,0 +1,11 @@
+### 1.3 Split array
+POST http://localhost:8070/api/splitArrays/3
+Content-Type: application/json;charset=UTF-8
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb290IiwiZXhwIjoxNTg5ODg5NzQzfQ.cmW-xd-UI1iuAOUz5y4FqbB5J2IXNv8RCv6aSdAIB4tEAIYqCUQrMYpdKHS8vIe4j2D8alB6J0Xjz7z1Zwy8TQ
+
+[
+  "1",
+  "2",
+  "3",
+  "4"
+]

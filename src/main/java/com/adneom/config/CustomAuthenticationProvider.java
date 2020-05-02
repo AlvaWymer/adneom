@@ -1,6 +1,6 @@
 package com.adneom.config;
 
-import com.adneom.service.GrantedAuthorityImpl;
+import com.adneom.service.impl.GrantedAuthorityImpl;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
