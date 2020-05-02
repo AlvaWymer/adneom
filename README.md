@@ -1,8 +1,12 @@
 > Author: Yang Naihua
 >
+>+33 06 59 38 15 68
+>
+>yangnaihua@gmail.com
+>
+> CV: [Java_Yang_Naihua.pdf](./Java_Yang_Naihua.pdf)
+>
 > https://www.linkedin.com/in/naihua-yang-481621110/
->
->
 >
 # adneom projet for test
 
@@ -59,6 +63,7 @@
 ...
 
 ------
+
 
 
 
