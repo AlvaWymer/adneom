@@ -11,10 +11,10 @@
 # adneom projet for test
 
 ## 1.1 How to use?
- ##Register client:
+ ## Register client:
   - /adneom/api/createClient.http
   
- ##Login client:
+ ## Login client:
   - /adneom/api/loginForClient.http
   
  # Split Array
@@ -22,6 +22,7 @@
 
 
 ## 1.2 Tech:
+ - Java 8+ 
  - Maven
  - Git
  - Spring Boot 
@@ -31,7 +32,7 @@
  - Swagger
  - Token
  
-  ##H2:
+ ## H2:
   
   | URL                                   | http://localhost:8070/h2-console/login.jsp?jsessionid=9290cc3bc47ba8db3b68bf4b7fc12a41                     |
   | ------------------------------------- | ------------------------ |
@@ -40,7 +41,7 @@
   | User Name:                            | sa    |
   
   
-  ##SWAGGER:
+ ## SWAGGER:
   http://localhost:8070/swagger-ui.html#/
   
 ------
