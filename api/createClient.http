@@ -1,0 +1,10 @@
+### 1.1 Create client
+POST http://localhost:8070/api/clients/register
+Content-Type: application/json;charset=UTF-8
+
+{
+    "username": "admin",
+    "password": "admin",
+    "email": "yangnaihua@gmail.com",
+    "phoneNumber": "+330659381568"
+}

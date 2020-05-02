@@ -1,0 +1,17 @@
+### 1.2 login for new register
+POST http://localhost:8070/login
+Content-Type: application/json;charset=UTF-8
+
+{
+  "username": "admin",
+  "password": "admin"
+}
+
+### 1.2 login for exist client
+POST http://localhost:8070/login
+Content-Type: application/json;charset=UTF-8
+
+{
+  "username": "root",
+  "password": "root"
+}

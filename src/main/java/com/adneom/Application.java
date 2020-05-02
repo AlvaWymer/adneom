@@ -2,9 +2,10 @@ package com.adneom;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @SpringBootApplication
@@ -22,6 +23,12 @@ public class Application {
 //        // result
 //        List<List<Integer>> subAry = partition(data, SPLIT_SIZE);
 //        System.out.println(subAry);
+    }
+
+    // TODO 优化到 WebSecurityConfig，这样的话，不需要在每个模块都要注入这个Bean
+    @Bean
+    public BCryptPasswordEncoder bCryptPasswordEncoder() {
+        return new BCryptPasswordEncoder();
     }
 
 
